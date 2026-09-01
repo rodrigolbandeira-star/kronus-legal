@@ -1,0 +1,322 @@
+<title>Política de Privacidade — Kronus</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --bg: #f9f8ff;
+    --surface: #ffffff;
+    --border: #e4e2f0;
+    --accent: #7c3aed;
+    --accent-soft: #ede9fc;
+    --text: #1a1b2e;
+    --text-secondary: #5b5f7b;
+    --text-faint: #9094ad;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0c0d20;
+      --surface: #13142a;
+      --border: #252640;
+      --accent: #a78bfa;
+      --accent-soft: #1e1840;
+      --text: #eeedf8;
+      --text-secondary: #9b99c4;
+      --text-faint: #5c5a7a;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0c0d20;
+    --surface: #13142a;
+    --border: #252640;
+    --accent: #a78bfa;
+    --accent-soft: #1e1840;
+    --text: #eeedf8;
+    --text-secondary: #9b99c4;
+    --text-faint: #5c5a7a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .logo-mark svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+  }
+
+  .logo-text {
+    font-family: 'Sora', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.3px;
+  }
+
+  .logo-sub {
+    font-size: 12px;
+    color: var(--text-faint);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .doc-meta {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 48px;
+  }
+
+  .doc-meta p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .doc-meta strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: 6px;
+    letter-spacing: -0.4px;
+  }
+
+  h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: 12px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    letter-spacing: 0.1px;
+  }
+
+  p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 65ch;
+    margin-bottom: 12px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  li {
+    font-size: 15px;
+    color: var(--text-secondary);
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.7;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.6;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  footer {
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--text-faint);
+  }
+</style>
+
+<div class="page">
+  <header>
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7L12 19.82 4 15.5v-7L12 4.18z"/>
+      </svg>
+    </div>
+    <div>
+      <div class="logo-text">Kronus</div>
+      <div class="logo-sub">por GLT Consultoria Empresarial LTDA</div>
+    </div>
+  </header>
+
+  <h1>Política de Privacidade</h1>
+
+  <div class="doc-meta">
+    <p><strong>Última atualização:</strong> 1º de setembro de 2026 &nbsp;·&nbsp; <strong>Versão:</strong> 1.0</p>
+    <p>Esta política se aplica ao aplicativo Kronus disponível para Android e iOS.</p>
+  </div>
+
+  <section>
+    <h2>1. Quem somos</h2>
+    <p>O Kronus é um aplicativo educacional gamificado desenvolvido e operado pela <strong>GLT Consultoria Empresarial LTDA</strong> (CNPJ a informar), com sede no Brasil. Nosso aplicativo é destinado a estudantes e seus responsáveis.</p>
+    <p>Para entrar em contato conosco: <a href="mailto:rodrigolbandeira@gmail.com">rodrigolbandeira@gmail.com</a></p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>2. Dados que coletamos</h2>
+    <p>Coletamos apenas os dados necessários para o funcionamento do aplicativo:</p>
+    <ul>
+      <li><strong>Dados de cadastro:</strong> nome, endereço de e-mail e número de telefone (WhatsApp), fornecidos voluntariamente no momento do registro.</li>
+      <li><strong>Dados do aluno:</strong> nome, idade/ano escolar, desempenho nos quizzes e histórico de atividades dentro do aplicativo.</li>
+      <li><strong>Imagens (fotos do caderno):</strong> fotografias capturadas pelo usuário dentro do aplicativo, utilizadas exclusivamente para gerar quizzes personalizados por inteligência artificial. As imagens são processadas e não são armazenadas de forma permanente após o processamento.</li>
+      <li><strong>Gravações de áudio:</strong> gravações opcionais feitas pelo usuário para geração de quiz por voz. Processadas e descartadas após o uso.</li>
+      <li><strong>Dados de uso:</strong> informações técnicas sobre o dispositivo, sistema operacional e interações com o aplicativo, utilizadas para melhoria do serviço.</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>3. Como usamos os dados</h2>
+    <p>Os dados coletados são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Criar e gerenciar contas de usuário (responsáveis e alunos).</li>
+      <li>Gerar quizzes personalizados com base no conteúdo fotografado ou narrado pelo aluno.</li>
+      <li>Acompanhar o progresso educacional e exibir relatórios ao responsável.</li>
+      <li>Enviar notificações relacionadas ao uso do aplicativo (com consentimento do usuário).</li>
+      <li>Melhorar a qualidade e a segurança do serviço.</li>
+    </ul>
+    <p><strong>Não vendemos, alugamos nem compartilhamos dados pessoais com terceiros para fins comerciais ou publicitários.</strong></p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>4. Compartilhamento de dados</h2>
+    <p>Seus dados podem ser compartilhados apenas nas seguintes situações:</p>
+    <ul>
+      <li><strong>Provedores de serviço:</strong> utilizamos serviços de terceiros para processamento de IA (geração de quizzes) e infraestrutura de backend. Esses parceiros processam os dados estritamente conforme nossas instruções e não podem usá-los para outros fins.</li>
+      <li><strong>Obrigação legal:</strong> podemos divulgar informações se exigido por lei, ordem judicial ou autoridade competente.</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>5. Público-alvo e uso por menores</h2>
+    <p>O Kronus é destinado a <strong>responsáveis legais adultos</strong> (pais e tutores) que criam e gerenciam as contas do aplicativo. O responsável cadastra os alunos vinculados à sua conta e acompanha o desempenho deles pelo painel do responsável.</p>
+    <p>O conteúdo educacional gerado pelo app é utilizado pelos alunos sob supervisão do responsável, que detém controle total sobre a conta, as configurações e os dados. Não aceitamos cadastros diretos de menores sem vínculo a uma conta de responsável adulto.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>6. Segurança</h2>
+    <p>Adotamos medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acesso não autorizado, perda ou divulgação indevida, incluindo criptografia de dados em trânsito (HTTPS/TLS) e armazenamento seguro de credenciais.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>7. Retenção e exclusão de dados</h2>
+    <p>Mantemos seus dados enquanto sua conta estiver ativa. Você pode solicitar a exclusão da sua conta e de todos os dados associados a qualquer momento enviando um e-mail para <a href="mailto:rodrigolbandeira@gmail.com">rodrigolbandeira@gmail.com</a>. Os dados serão removidos em até 30 dias após a solicitação.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>8. Seus direitos</h2>
+    <p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018), você tem direito a:</p>
+    <ul>
+      <li>Confirmar a existência de tratamento dos seus dados.</li>
+      <li>Acessar, corrigir ou atualizar seus dados pessoais.</li>
+      <li>Solicitar a exclusão dos seus dados.</li>
+      <li>Revogar o consentimento a qualquer momento.</li>
+      <li>Obter informações sobre com quem seus dados são compartilhados.</li>
+    </ul>
+    <p>Para exercer seus direitos, entre em contato: <a href="mailto:rodrigolbandeira@gmail.com">rodrigolbandeira@gmail.com</a></p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>9. Alterações nesta política</h2>
+    <p>Podemos atualizar esta Política de Privacidade periodicamente. Quando houver mudanças relevantes, notificaremos os usuários por meio do aplicativo ou por e-mail. O uso contínuo do Kronus após a notificação constitui aceitação das alterações.</p>
+  </section>
+
+  <footer>
+    <p>GLT Consultoria Empresarial LTDA · Brasil · <a href="mailto:rodrigolbandeira@gmail.com">rodrigolbandeira@gmail.com</a></p>
+    <p style="margin-top: 4px;">Kronus © 2026 · Todos os direitos reservados</p>
+  </footer>
+</div>
